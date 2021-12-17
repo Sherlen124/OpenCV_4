@@ -39,8 +39,6 @@ int main(int argc, char* argv[])
     Stitcher::Status status = stitcher->stitch(images, pano);
     if (status != Stitcher::OK)
     {
-        // Проверяем, не удалось ли склеить изображения
-        // статус в порядке, если изображения успешно прикреплены
         cout << "Can't stitch images\n";
         return -1;
     }
